@@ -7,4 +7,7 @@ migrate_down:
 sqlc:
 	sqlc generate
 
+test:
+	go test -v -cover ./...
+
 .PHONY: migrate_up migrate_down sqlc
