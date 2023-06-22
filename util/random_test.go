@@ -59,7 +59,6 @@ func TestRandomMoney(t *testing.T) {
 
 	rand2 := RandomMoney()
 
-	require.NotEmpty(t, rand2)
 	require.GreaterOrEqual(t, rand2, int64(0))
 	require.LessOrEqual(t, rand2, int64(1000))
 
